@@ -1,6 +1,17 @@
-# AdonisJS - CRUD
+# 🚀 **AdonisJS - CRUD** 
 
-Esse projeto é a implementação de um crud com Adonis-js. Apesar de ter como objetivo a configuração de um simples crud, ele faz uso de testes de integração para garantir a consistência da aplicação e usa o docker para facilitar a criação do ambiente de desenvolvimento. A api também faz uso de soluções interessantes como DTOs e uma opção ao tratamento de erros com trycatch. **ResultWrapper**
+Este projeto é a implementação de um **CRUD completo** utilizando o AdonisJs e Mysql
+
+### 🛠️ **Destaques do Projeto**
+- **🚀 Integração com Docker**: Ambiente de desenvolvimento fácil de configurar com Docker.
+- **🔒 Testes de Integração**: Testes de integração que validam o funcionamento das rotas e a interação entre os componentes.
+- **📦 DTOs**: Utilização de **Data Transfer Objects** (DTOs) para garantir que os dados sejam manipulados de forma segura e eficiente.
+- **⚡ Alternativa ao `try/catch`**: Implementação do **ResultWrapper** para tratamento de erros, simplificando a manutenção e tornando o código mais limpo e previsível.
+
+### 💡 **Objetivo**
+Embora o principal objetivo seja configurar um simples CRUD, tento deixar esse projeto o mais completo possível, incluindo features
+que tornam a aplicação mais preparada para resolver problemas reais
+
 
 ---
 
