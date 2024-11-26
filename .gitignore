@@ -1,0 +1,31 @@
+# Dependencies and AdonisJS build
+node_modules
+build
+tmp
+
+# Secrets
+.env
+.env.local
+.env.production.local
+.env.development.local
+
+# Frontend assets compiled code
+public/assets
+
+# Build tools specific
+npm-debug.log
+yarn-error.log
+
+# Editors specific
+.fleet
+.idea
+.vscode
+
+# Platform specific
+.DS_Store
+database/migrations/1732125248845_create_users_table.ts
+database/migrations/1732125248848_create_access_tokens_table.ts
+database/migrations/1732126815273_create_clients_table.ts
+database/migrations/1732126829479_create_addresses_table.ts
+database/migrations/1732126900919_create_products_table.ts
+database/migrations/1732126923001_create_sales_table.ts
