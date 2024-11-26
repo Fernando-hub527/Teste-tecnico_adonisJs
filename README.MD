@@ -103,7 +103,8 @@ Abaixo está a lista de rotas disponíveis na aplicação, organizadas por recur
 
 ### 🛠️ Observações
 
-- ✅ **Middleware `auth`**: Todas as rotas protegidas exigem que seja enviado um token JWT no header da requisição
+- ✅ **Middleware `auth`**: Todas as rotas protegidas exigem que seja enviado um token JWT no header da requisição (Esse token 
+recuperado através da rota de login)
 - ❌ **Rotas públicas**: A criação de usuários e login não requerem autenticação.
 
 
@@ -153,6 +154,16 @@ Esquema para a criação de um novo usuário:
 ```json
 {
   "fullName": "Maria Oliveira Silva Basto",
+  "email": "maria.oliveira@gmail.com",
+  "password": "senha1234"
+}
+```
+### 🔑 Usuário (/api/v1/login)
+
+Esquema para a criação de um novo usuário:
+
+```json
+{
   "email": "maria.oliveira@gmail.com",
   "password": "senha1234"
 }
