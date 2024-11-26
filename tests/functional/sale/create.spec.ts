@@ -8,7 +8,7 @@ test.group('Sale create', (group) => {
   group.each.setup(() => testUtils.db().withGlobalTransaction())
 
   test('when request is not authenticate, should return an error', async ({ client }) => {
-    const response = await client.post("/api/v1/user")
+    const response = await client.post("/api/v1/sale")
 
     response.assertStatus(401)
     response.assertBody({errors: [{message: "Unauthorized access"}]})

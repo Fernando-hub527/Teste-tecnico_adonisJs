@@ -8,13 +8,6 @@ test.group('User create', (group) => {
   group.each.setup(() => testUtils.db().withGlobalTransaction())
 
 
-  test('when request is not authenticate, should return an error', async ({ client }) => {
-    const response = await client.post("/api/v1/user")
-
-    response.assertStatus(401)
-    response.assertBody({errors: [{message: "Unauthorized access"}]})
-  })
-
   test('when invalid name is sent, should return an error with 400 status', async ({ client }) => {
     const user = await User.create({fullName: "Fernando Coelho Saraiva", email: "fernando@gmail.com", password: "password123"})
     accessToken = await User.accessTokens.create(user, undefined, { expiresIn: '30 days' })

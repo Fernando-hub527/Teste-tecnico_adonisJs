@@ -23,7 +23,7 @@ router.group(() => {
 
   router.post('/sale', [SalesController, 'createSale']).use(middleware.auth({guards: ['api']}))
   router.post('/login', [UserController, 'login'])
-  router.post('/user', [UserController, 'createUser']).use(middleware.auth({guards: ['api']}))
+  router.post('/user', [UserController, 'createUser'])
 
 }).prefix("/api/v1")
 
